@@ -1,12 +1,12 @@
-var images = ['7.jpg', 'banana.png', 'bell.webp', 'cherry.webp', 'crown.png', 'horse.webp', 'strawberry.png'];
-var money = 200;
+let images = ['7.jpg', 'banana.png', 'bell.webp', 'cherry.webp', 'crown.png', 'horse.webp', 'strawberry.png'];
+let money = 200;
 function getNewImages() {
-    var p1idx = Math.floor(Math.random() * images.length);
-    var p2idx = Math.floor(Math.random() * images.length);
-    var p3idx = Math.floor(Math.random() * images.length);
-    var p1 = images[p1idx];
-    var p2 = images[p2idx];
-    var p3 = images[p3idx];
+    let p1idx = Math.floor(Math.random() * images.length);
+    let p2idx = Math.floor(Math.random() * images.length);
+    let p3idx = Math.floor(Math.random() * images.length);
+    let p1 = images[p1idx];
+    let p2 = images[p2idx];
+    let p3 = images[p3idx];
     document.getElementById('img1').src=p1;
     document.getElementById('img2').src=p2;
     document.getElementById('img3').src=p3;

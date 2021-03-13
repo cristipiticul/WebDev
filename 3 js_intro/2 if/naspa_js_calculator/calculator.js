@@ -1,8 +1,8 @@
 function compute() {
-    var a = Number(document.getElementById('a').value);
-    var b = Number(document.getElementById('b').value);
-    var op = document.getElementById('op').value;
-    var rez;
+    let a = Number(document.getElementById('a').value);
+    let b = Number(document.getElementById('b').value);
+    let op = document.getElementById('op').value;
+    let rez;
     
     // Varianta 1
     // if (op == '+') {
