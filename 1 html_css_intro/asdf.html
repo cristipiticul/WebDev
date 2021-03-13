@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Pagina lui Cristinel</title>
+    <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        html,body,#pagina {
+            height:100%;
+        }
+        body {
+            margin: 0;
+        }
+        #pagina {
+            display: grid;
+            grid-template-areas: "sus sus"
+                                 "mijloc mijloc"
+                                 "stanga_jos dreapta_jos";
+            grid-template-rows: 68px 44px 1fr;
+            grid-template-columns: 15% 1fr;
+        }
+        #titlu {
+            grid-area: sus;
+            font-family: Armata;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 70px;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            font-size: 17pt;
+        }
+        #meniu {
+            grid-area: mijloc;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+        }
+        #tutoriale {
+            grid-area: stanga_jos;
+            background-color: lightgrey;
+        }
+        #continut {
+            grid-area: dreapta_jos;
+        }
+        i {
+            font-size: 30px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="pagina">
+        <div id="titlu">
+            <h1>w3cools<span style="color:green">.com</span></h1>
+            <p>THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+        </div>
+        <div id="meniu">
+            <i class="glyphicon glyphicon-home"></i>
+        </div>
+        <div id="tutoriale">
+            Tutoriale
+        </div>
+        <div id="continut">
+            Continut
+        </div>
+    </div>
+</body>
+ 
+</html>

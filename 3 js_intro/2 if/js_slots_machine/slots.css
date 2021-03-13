@@ -1,0 +1,41 @@
+.small-img {
+    width: 80px;
+    height: 80px;
+}
+#parent {
+    display: inline-block;
+    position: relative;
+    height: 500px;
+}
+#cash {
+    position: absolute;
+    bottom: 43px;
+    right: 170px;
+    color: white;
+    font-size: 250%;
+    font-family: sans-serif;
+}
+#img1, #img2, #img3 {
+    position: absolute;
+    top: 180px;
+    background-color: white;
+}
+#img1 {
+    left: 80px;
+}
+#img2 {
+    left: 173px;
+}
+#img3 {
+    left: 266px;
+}
+#clicker {
+    display: inline-block;
+    position: absolute;
+    top: 96px;
+    right: 16px;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+}

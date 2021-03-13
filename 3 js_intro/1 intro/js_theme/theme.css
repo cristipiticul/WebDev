@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h1, p {
+    text-align: center;
+}
+
+div {
+    margin-top: 20px;
+}
+
+.button {
+    margin-right: 15px;
+    padding: 10px;
+    background-color: salmon;
+    border-radius: 10px;
+    cursor: pointer;
+}

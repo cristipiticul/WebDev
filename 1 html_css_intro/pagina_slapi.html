@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <"
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        html, body, #pagina {
+            height: 100%;
+        }
+        #pagina {
+            display: grid;
+            grid-template-areas:   "header header"
+                                    "sidebar content"
+                                    "sidebar footer";
+            grid-template-rows:    150px 1fr 100px;
+            grid-template-columns: 20% 1fr;
+        }
+        #produse {
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .optiuni {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+        .poza {
+            height: 300px;
+            width: auto;
+            opacity: 70%;
+            transition: all 0.5s;
+        }
+        .poza:hover {
+            opacity: 100%;
+            transform: scale(1.1);
+        }
+        a {
+            color: black;
+            border: 2px solid #4CAF50;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: aliceblue;
+            transition: all 0.5s;
+        }
+        a:hover {
+            /* REGULILE DE AICI se aplica doar cand MOUSE-UL E DEASUPRA ELEMENTULUI a */
+            background-color: #4CAF50;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        .fa {
+            color: red;
+            font-size: 30px;
+            padding: 5px;
+            border: 3px solid red;
+            border-radius: 50%;
+            transition: all 0.5s;
+            background-color: white;
+            box-shadow: 2px 3px #888888;
+        }
+        .fa:hover {
+            transform: rotateY(180deg) scale(1.5) rotateX(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagina">
+        <div style="background-color: pink; grid-area:header">
+            Header
+        </div>
+        <div style="background-color: lightgreen; grid-area:sidebar">
+            Sidebar
+        </div>
+        <div id="produse" style="background-color: lightseagreen; grid-area:content">
+            <div>Despre slapi</div>
+            <div><img class="poza" src="https://contents.mediadecathlon.com/p1755129/k8d15c931d6ffff2a31e10bd473018dd5/1755129_default.jpg?format=auto&quality=60&f=800x0"></div>
+            <a href="https://www.decathlon.ro/C-126798-articole-pentru-plaja/N-408124-tip-produs~papuci">
+                Slapi faini Decathlon
+            </a>
+            <i class="fa fa-heart"></i>
+        </div>
+        <div style="background-color: lightblue; grid-area:footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
