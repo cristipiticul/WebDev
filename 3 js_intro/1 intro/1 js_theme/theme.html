@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme example</title>
     <link rel="stylesheet" href="theme.css">
-    <script src="theme.js"></script>
 </head>
 <body id="bodyId">
     <h1>Title</h1>
-    <p>This is my awesome page</p>
+    <p id="pid">This is my awesome page</p>
     <div>
-        <span class="button" onclick="changeToDefaultTheme()">Default theme</span>
-        <span class="button" onclick="changeToLightTheme()">Light theme</span>
-        <span class="button" onclick="changeToDarkTheme()">Dark theme</span>
+        <span class="button" onclick="schimbaCuloareaInNota10()">Tudor theme</span>
+        <span class="button" onclick="schimbaCuloareaPal()">Maria theme</span>
+        <span class="button" onclick="schimbaCuloareaInIntunecat()">Dark theme</span>
+        <span class="button" id="butonMaria">Ce frumoasa e Maria</span>
     </div>
+    <script src="theme.js"></script>
 </body>
 </html>

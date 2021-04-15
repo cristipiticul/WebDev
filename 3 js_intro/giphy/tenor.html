@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="aaa">
+    <input type="button" id="search" value="Search"><br>
+    <img id="img">
+    <script>
+        document.getElementById("search").addEventListener('click', function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var response = JSON.parse(this.responseText)
+                    document.getElementById('img').src = response.results[0].media[0].gif.url;
+                }
+            };
+            var s = document.getElementById("aaa").value;
+            xhttp.open("GET", "https://g.tenor.com/v1/search?key=LIVDSRZULELA&limit=8&q=" + s, true);
+            xhttp.send();
+        });
+    </script>
+</body>
+
+</html>

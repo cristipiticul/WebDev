@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textInp" placeholder="Item">
+    <input type="button" id="addBtn" value="Add">
+    <div id="content">
+    </div>
+    <script>
+        document.getElementById('addBtn').addEventListener('click', function() {
+            var newDiv = document.createElement('div');
+            
+            var newP = document.createElement('p');
+            newP.innerText = document.getElementById('textInp').value;
+            newDiv.appendChild(newP);
+
+            var newDelBtn = document.createElement('input')
+            newDelBtn.type = 'button';
+            newDelBtn.value = 'Del me';
+            newDelBtn.addEventListener('click', function() {
+                document.getElementById('content').removeChild(newDiv);
+            })
+            newDiv.appendChild(newDelBtn);
+            
+            document.getElementById('content').appendChild(newDiv);
+        });
+    </script>
+</body>
+</html>

@@ -29,3 +29,11 @@ a:hover {
 * {
     box-sizing: border-box;
 }
+
+ul {
+    display: none;
+}
+
+.invalid {
+    border-color: red;
+}

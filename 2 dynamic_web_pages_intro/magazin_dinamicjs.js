@@ -11,7 +11,7 @@ xhttp.send();
 
 function showProducts() {
     let productsHtml = "<div id=\"product_list\">";
-    for (const product of products) {
+    for (var i = 0; i < products.length; i++) {
         productsHtml += `
         <a class="product" href="javascript:showProduct(${product.id})">
             <h2 class="product_title">${product.name}</h2>
