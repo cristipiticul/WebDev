@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  // V1: CSS Class
   var [theme, setTheme] = useState('light');
   function changeToLightTheme() {
     setTheme("light");
@@ -12,13 +13,35 @@ function App() {
   return (
     <div class={theme}>
       <h1>Title</h1>
-      <p id="pid">This is my awesome page</p>
+      <p>This is my awesome page</p>
       <div>
-        <span class="button" onClick={changeToLightTheme}>Light theme</span>
-        <span class="button" onClick={changeToDarkTheme}>Dark theme</span>
+        <button onClick={changeToLightTheme}>Light theme</button>
+        <button onClick={changeToDarkTheme}>Dark theme</button>
       </div>
     </div>
   );
+
+  // V2: inline style
+  // var [backgroundColor, setBackgroundColor] = useState("white");
+  // var [textColor, setTextColor] = useState("black");
+  // function changeToLightTheme() {
+  //   setBackgroundColor("white");
+  //   setTextColor("black");
+  // }
+  // function changeToDarkTheme() {
+  //   setBackgroundColor("black");
+  //   setTextColor("white");
+  // }
+  // return (
+  //   <div style={{backgroundColor: backgroundColor, color: textColor}}>
+  //     <h1>Title</h1>
+  //     <p>This is my awesome page</p>
+  //     <div>
+  //       <button onClick={changeToLightTheme}>Light theme</button>
+  //       <button onClick={changeToDarkTheme}>Dark theme</button>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default App;

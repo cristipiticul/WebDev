@@ -3,28 +3,8 @@ html, body, #root, #root>div {
   margin: 0;
 }
 
-#root>div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-}
-
-h1, p {
-  text-align: center;
-}
-
-div {
-  margin-top: 20px;
-}
-
-.button {
-  margin-right: 15px;
-  padding: 10px;
-  background-color: salmon;
-  border-radius: 10px;
-  cursor: pointer;
+h1 {
+  margin: 0;
 }
 
 .light {
