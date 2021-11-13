@@ -1,0 +1,17 @@
+html, body, #root, #root>div {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.light {
+  color: black;
+  background-color: antiquewhite;
+}
+.dark {
+  color: white;
+  background-color: darkblue;
+}
